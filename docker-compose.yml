@@ -1,0 +1,13 @@
+module.exports = {
+  semi: false,
+  singleQuote: true
+}
+# build config
+copy:
+  - src/**
+  - package.json
+version: "3"
+services:
+  app:
+    image: busybox
+    restart: unless-stopped
